@@ -1,0 +1,46 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-width: 250px; /* لضمان بقاء البطاقات بحجم مناسب */
+}
+
+.info-card:hover {
+  transform: translateY(-5px); /* تأثير الحركة عند التمرير */
+}
+
+.chart-section, .tasks-section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex-grow: 1; /* للتأكد من أن هذه الأقسام تستغل المساحة المتبقية */
+}
+
+.tasks-section ul {
+  list-style-type: none;
+  padding: 0;
+  color: #4a4a4a;
+}
+
+.tasks-section ul li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+#root {
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.app-container {
+  display: flex;
+  min-height: 100vh; /* لتملأ الشاشة بالكامل */
+  height: 100%;
+  direction: rtl;
+  background-color: #f3f4f6;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
