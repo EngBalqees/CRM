@@ -1,5 +1,4 @@
 #root {
-
   text-align: center;
   margin: 0;
   padding: 0;
@@ -23,5 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 20px;
+}
+.content {
+  padding-left: 15PX;
+  padding-right: 15px;
 }

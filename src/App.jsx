@@ -19,8 +19,8 @@ function App() {
     <div className="app-container">
       <Sidebar />
       <div className="content-wrapper">
-     
           <Header />
+          <div className='content'>
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/clients" element={<AddClientForm />} />
@@ -30,6 +30,7 @@ function App() {
             <Route />
             <Route />
           </Routes>
+          </div>
       </div>
     </div>
   </Router >

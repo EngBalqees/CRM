@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  background-color: #f4f4f9; /* Light background for better contrast */
+  background-color: #f4f4f9;
+ /* Light background for better contrast */
 }
 
 @keyframes fadeInUp {
@@ -52,38 +53,37 @@
 }
 
 .stats-card.total-contacts {
-  background-color: #6a1b9a; /* Purple */
+  background-color: #9e7234; /* Purple */
 }
 
 .stats-card.active-deals {
-  background-color: #e65100; /* Orange */
+  background-color: #7e551a; /* Orange */
 }
 
 .stats-card.tasks-due {
-  background-color: #fdd835; /* Yellow */
-  color: #000;
+  background-color: #87612d; /* Yellow */
 }
 
 .stats-card.new-leads {
-  background-color: #00838f; /* Teal */}
+  background-color: #83581d; /* Teal */}
   .stats-card.upcoming-appointments {
-    background-color: #d81b60; /* Pink */
+    background-color: #705939; /* Pink */
 }
 
 .stats-card.recent-activities {
-    background-color: #1e88e5; /* Light Blue */
+    background-color: #8f6120; /* Light Blue */
 }
 
 .stats-card.team-performance {
-    background-color: #43a047; /* Green */
+    background-color: #a17941; /* Green */
 }
 
 .stats-card.customer-feedback {
-    background-color: #8e24aa; /* Dark Purple */
+    background-color: #643b0282; /* Dark Purple */
 }
 
 .stats-card.sales-targets {
-    background-color: #ff9800; /* Amber */
+    background-color: #886029; /* Amber */
 }
 
 .stats-card::before {

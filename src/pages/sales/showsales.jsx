@@ -1,6 +1,6 @@
 import React from 'react';
 import './showsales.css';
-import KPICards from './cards.Jsx';
+import KPICards from './cards.jsx';
 function OpportunitiesTable() {
     return (
         <>
