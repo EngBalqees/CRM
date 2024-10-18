@@ -4,48 +4,66 @@
 }
 
 .user-avatar {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.user-avatar:hover {
+    transform: scale(1.1);
 }
 
 .menu {
     position: absolute;
-    top: 50px;
-    right: 70;
-    width: 200px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    top: 60px; /* Adjusted to position correctly */
+    right: 470;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+    width: 200px;
+}
+
+.menu img.user-menu {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
 }
 
 .user-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    padding: 10px;
     text-align: center;
-}
-
-.user-menu {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    font-weight: bold;
+    background-color: #4c4848;
 }
 
 .menu-item1 {
     width: 100%;
     padding: 10px;
-    margin-bottom: 5px;
-    background-color: #f9f9f9;
     border: none;
+    background: none;
     text-align: left;
     cursor: pointer;
+    color: #333;
+  text-align: right;
+    transition: background-color 0.3s;
 }
 
-.menu-item:hover {
+.menu-item1:hover {
     background-color: #f0f0f0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

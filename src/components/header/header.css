@@ -1,24 +1,39 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  background-color: #00838f;
+  
   align-items: center;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* ظل لطيف */
-  border-radius: 10px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .search-input {
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 250px;
-  transition: all 0.3s;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-right: 20px;
+  width: 300px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
 }
 
-.search-input:focus {
-  border-color: #007bff;
+.search-input::placeholder {
+  color: #7f8c8d;
+}
+
+h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 1.8em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #e74c3c;
 }
 
 .user-section {
@@ -26,9 +41,23 @@
   align-items: center;
 }
 
-.user-avatar {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  margin-left: 150px;
+.user-section>* {
+  margin-left: 120px
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 1.5em;
+  }
 }

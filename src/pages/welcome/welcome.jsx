@@ -1,35 +1,43 @@
 import React from 'react';
 import './welcome.css';
 import CalendarSection from '../../components/calender/calender.jsx';
+import ChartComponent from '../../components/chart/chart.jsx';
 function MainSection() {
   return (
-    <main className="main-section">
-      <div className="info-cards">
-        <div className="info-card">
-          <h3>عملاء جدد</h3>
-          <p>25</p>
-        </div>
-        <div className="info-card">
-          <h3>اجتماعات مجدولة</h3>
-          <p>5</p>
-        </div>
-        <div className="info-card">
-          <h3>المهام المكتملة</h3>
-          <p>18</p>
-        </div>
+    <div className="dashboard">
+      <div className="stats-card total-contacts">
+        <h3>Total Contacts</h3>
+        <p>150</p>
       </div>
-      <div className="chart-section">
+      <div className="stats-card active-deals">
+        <h3>Active Deals</h3>
+        <p>30</p>
+      </div>
+      <div className="stats-card tasks-due">
+        <h3>Tasks Due Today</h3>
+        <p>5</p>
+      </div>
+      <div className="stats-card new-leads">
+        <h3>New Leads</h3>
+        <p>10</p>
+      </div>
+      <div className="stats-card upcoming-appointments">
+        <h3>Upcoming Appointments</h3>
+        <p>12</p>
+      </div>
+      
+    
+      <div className="stats-card customer-feedback">
+        <h3>Customer Feedback</h3>
+        <p>95%</p>
+      </div>
+      <div className="stats-card sales-targets">
+        <h3>Sales Targets</h3>
+        <p>80%</p>
+      </div>
       <CalendarSection />
-      </div>
-      <div className="tasks-section">
-        <h3>المهام اليومية</h3>
-        <ul>
-          <li>مراجعة طلب عميل جديد</li>
-          <li>اجتماع مع فريق المبيعات</li>
-          <li>تحديث قاعدة بيانات العملاء</li>
-        </ul>
-      </div>
-    </main>
+      <ChartComponent />
+    </div>
   );
 }
 

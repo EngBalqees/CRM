@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import "../addClient/addClient.css";
 
 function AddClientForm() {
+  const initialCustomers = [
+    {
+      fullName: "Balqees Sukar",
+      email: 'balqeessuker@gmail.com',
+      phone: '0569664251',
+      company: 'al yones',
+      address: 'azzoun',
+      birthDate: '1/1/2000'
+    }
+  ];
+ 
   const [customer, setCustomer] = useState({
     fullName: '',
     email: '',
@@ -11,7 +22,7 @@ function AddClientForm() {
   });
 
   const [showForm, setShowForm] = useState(false); // التحكم في إظهار النموذج
-  const [customers, setCustomers] = useState([]); // قائمة العملاء المضافة
+  const [customers, setCustomers] = useState(initialCustomers); // قائمة العملاء المضافة
   const [isEditing, setIsEditing] = useState(false); // حالة التعديل
   const [editIndex, setEditIndex] = useState(null); // العميل الذي يتم تعديله
   const [showToast, setShowToast] = useState(false); // حالة عرض الرسالة
@@ -47,7 +58,7 @@ function AddClientForm() {
       phone: '',
       company: '',
       address: '',
-      birthDate: '' 
+      birthDate: ''
     });
     setShowForm(false); // إخفاء النموذج بعد الإضافة
     showSuccessToast(); // عرض رسالة النجاح
@@ -79,11 +90,12 @@ function AddClientForm() {
       phone: '',
       company: '',
       address: '',
-      birthDate: '' 
+      birthDate: ''
     });
     setShowForm(false);
     setIsEditing(false);
   };
+
 
   return (
     <div className="form-container">
@@ -173,8 +185,8 @@ function AddClientForm() {
               onChange={handleInputChange}
             />
           </div>
-           {/* حقل تاريخ الميلاد */}
-           <div className="form-group">
+          {/* حقل تاريخ الميلاد */}
+          <div className="form-group">
             <label>تاريخ الميلاد</label>
             <input
               type="date"
@@ -192,10 +204,10 @@ function AddClientForm() {
           </div>
         </form>
       )}
-       {showToast && (
+      {showToast && (
         <div className="toast show">تم إضافة العميل بنجاح!</div>
       )}
-       {showDeleteToast && (
+      {showDeleteToast && (
         <div className="toast show delete">تم حذف العميل بنجاح!</div>
       )}
 

@@ -1,0 +1,84 @@
+.kpi-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  .kpi-card {
+    background: #ffffff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* لإضافة ظل */
+    border: 1px solid #e0e0e0; /* إضافة حدود للبطاقة */
+    position: relative;
+  }
+  
+  .kpi-card h3 {
+    border-bottom: 1px solid #ddd; /* خط تحت العنوان */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  
+  .kpi-value {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .kpi-remaining, .kpi-subvalue {
+    font-size: 0.9em;
+    color: #777;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .kpi-subvalue {
+    font-size: 1.2em;
+    color: #e74c3c;
+  }
+  
+  .kpi-chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .kpi-chart span {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+    border: 1px solid #ddd; /* إضافة حدود لكل رسم */
+  }
+  
+  .kpi-circle {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle-background {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: relative;
+    border: 1px solid #e0e0e0; /* إضافة حدود حول الدائرة */
+  }
+  
+  .circle-overlay {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#4CAF50 72%, #e0e0e0 72%); /* تحاكي نسبة الفوز */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
