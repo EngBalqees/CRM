@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './header.css';
 import UserProfileMenu from '../../pages/userdialog/userdialog.jsx';
 function Header() {
   return (
